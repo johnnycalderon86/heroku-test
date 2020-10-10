@@ -26,7 +26,7 @@ mongoose.connection.once('open', () => {
 
 app.use('/graphql-f1', graphqlHTTP({
     schema,
-   
+    graphiql: true
 }))
 
 app.use(express.static('public'));
