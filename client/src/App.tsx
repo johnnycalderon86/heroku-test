@@ -21,9 +21,9 @@ const App = () => {
     <div>
 
 
+          <ApolloProvider client={client}>
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.key}>
-          <ApolloProvider client={client}>
             <Route exact path="/">
               <StartPage />
             </Route>
@@ -42,9 +42,9 @@ const App = () => {
             <Route exact path="/drivers">
               <Drivers />
             </Route>
-          </ApolloProvider>
         </Switch>
       </AnimatePresence>
+          </ApolloProvider>
 
     </div>
   );
