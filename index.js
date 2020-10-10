@@ -1,9 +1,9 @@
 const express = require('express');
 const { graphqlHTTP } = require('express-graphql');
 const schema = require('./schema/schema');
-const mongoose = require('mongoose')
-const cors = require('cors');
+const mongoose = require('mongoose');
 const path = require('path');
+const cors = require('cors');
 
 require('dotenv').config()
 
@@ -35,7 +35,7 @@ app.get('*', (req, res) =>{
     res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 })
 
-const PORT = process.env.PORT || 4001;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
     console.log(`Listening for request on port ${PORT}`);
 })
