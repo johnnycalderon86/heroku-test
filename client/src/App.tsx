@@ -11,7 +11,7 @@ import { Teams } from './components/Teams';
 import { Drivers } from './components/Drivers';
 //------------------------------------
 const client = new ApolloClient({
-  uri: '/graphql-f1',
+  uri: '/graphql',
   cache: new InMemoryCache(),
 });
 
