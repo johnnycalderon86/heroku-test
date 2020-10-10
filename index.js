@@ -16,7 +16,7 @@ const app = express();
 app.use(cors())
 
 //connecting to mongoDB server
-mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@cluster0.or615.mongodb.net/${dbName}?retryWrites=true&w=majority`,
+mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@cluster0.or615.mongodb.net/${dbName}?authSource=${dbName}&w=1`,
  { useNewUrlParser: true, useUnifiedTopology: true }).catch(err => console.log(err))
 
 mongoose.connection.once('open', () => {
