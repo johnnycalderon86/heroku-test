@@ -1,12 +1,14 @@
 {
-  "name": "server",
+  "name": "formula-1",
   "version": "1.0.0",
   "description": "formula 1 graphql server ",
   "main": "index.js",
   "scripts": {
+   
     "start": "node index.js",
-    "server": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Eliseo",
   "license": "ISC",
