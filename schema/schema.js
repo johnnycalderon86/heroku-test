@@ -55,49 +55,49 @@ const RootQuery = new GraphQLObjectType({
         }
     }
 })
-const Mutation = new GraphQLObjectType({
-    name: 'Mutation',
-    fields: {
-        addCircuit: {
-            type: CircuitType,
-            args: {
-                name: { type: new GraphQLNonNull(GraphQLString) },
-                city: { type: new GraphQLNonNull(GraphQLString) },
-                fastestLap: { type: GraphQLString },
-                fastestLapDriver: { type: new GraphQLNonNull(GraphQLString) },
-                fastestLapYear: { type: GraphQLString },
-                fastestLapTeam: { type: GraphQLString },
-                fastestLapCar: { type: GraphQLString },
-                length: { type: new GraphQLNonNull(GraphQLString) },
-                country: { type: new GraphQLNonNull(GraphQLString) },
-                trackImage: { type: new GraphQLNonNull(GraphQLString) },
-                weekendDate: { type: new GraphQLNonNull(GraphQLString) },
-                month: { type: new GraphQLNonNull(GraphQLString) },
-            },
-            resolve(parent, args) {
-                let circuit = new Circuit({
-                    name: args.name,
-                    city: args.city,
-                    fastestLap: args.fastestLap,
-                    fastestLapDriver: args.fastestLapDriver,
-                    fastestLapYear: args.fastestLapYear,
-                    fastestLapTeam: args.fastestLapTeam,
-                    fastestLapCar: args.fastestLapCar,
-                    length: args.length,
-                    country: args.country,
-                    trackImage: args.trackImage,
-                    weekendDate: args.weekendDate,
-                    month: args.month
-                });
-                return circuit.save()
-            }
-        }
-    }
-})
+// const Mutation = new GraphQLObjectType({
+//     name: 'Mutation',
+//     fields: {
+//         addCircuit: {
+//             type: CircuitType,
+//             args: {
+//                 name: { type: new GraphQLNonNull(GraphQLString) },
+//                 city: { type: new GraphQLNonNull(GraphQLString) },
+//                 fastestLap: { type: GraphQLString },
+//                 fastestLapDriver: { type: new GraphQLNonNull(GraphQLString) },
+//                 fastestLapYear: { type: GraphQLString },
+//                 fastestLapTeam: { type: GraphQLString },
+//                 fastestLapCar: { type: GraphQLString },
+//                 length: { type: new GraphQLNonNull(GraphQLString) },
+//                 country: { type: new GraphQLNonNull(GraphQLString) },
+//                 trackImage: { type: new GraphQLNonNull(GraphQLString) },
+//                 weekendDate: { type: new GraphQLNonNull(GraphQLString) },
+//                 month: { type: new GraphQLNonNull(GraphQLString) },
+//             },
+//             resolve(parent, args) {
+//                 let circuit = new Circuit({
+//                     name: args.name,
+//                     city: args.city,
+//                     fastestLap: args.fastestLap,
+//                     fastestLapDriver: args.fastestLapDriver,
+//                     fastestLapYear: args.fastestLapYear,
+//                     fastestLapTeam: args.fastestLapTeam,
+//                     fastestLapCar: args.fastestLapCar,
+//                     length: args.length,
+//                     country: args.country,
+//                     trackImage: args.trackImage,
+//                     weekendDate: args.weekendDate,
+//                     month: args.month
+//                 });
+//                 return circuit.save()
+//             }
+//         }
+//     }
+// })
 
 module.exports = new GraphQLSchema({
     query: RootQuery,
-    mutation: Mutation
+    // mutation: Mutation
 })
 // const TeamsType = new GraphQLObjectType({
 //     name: 'Teams',
