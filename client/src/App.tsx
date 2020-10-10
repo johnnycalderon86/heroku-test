@@ -21,30 +21,30 @@ const App = () => {
     <div>
 
 
-            <ApolloProvider client={client}>
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.key}>
-          <Route exact path="/">
-            <StartPage />
-          </Route>
-          <Route exact path="/home">
-            <Home />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/circuits">
+          <ApolloProvider client={client}>
+            <Route exact path="/">
+              <StartPage />
+            </Route>
+            <Route exact path="/home">
+              <Home />
+            </Route>
+            <Route exact path="/about">
+              <About />
+            </Route>
+            <Route exact path="/circuits">
               <Circuits />
-          </Route>
-          <Route exact path="/teams">
-            <Teams />
-          </Route>
-          <Route exact path="/drivers">
-            <Drivers />
-          </Route>
+            </Route>
+            <Route exact path="/teams">
+              <Teams />
+            </Route>
+            <Route exact path="/drivers">
+              <Drivers />
+            </Route>
+          </ApolloProvider>
         </Switch>
       </AnimatePresence>
-            </ApolloProvider>
 
     </div>
   );

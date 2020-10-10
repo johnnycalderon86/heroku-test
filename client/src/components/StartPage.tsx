@@ -14,6 +14,8 @@ export const StartPage = () => {
     const [isHovering, setIsHovering] = useState(
         false
     );
+    console.log(isHovering);
+    
     const onHoverHome = () => {
         setIsHovering(true);
         play();
