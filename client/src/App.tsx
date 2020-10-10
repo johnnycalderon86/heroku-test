@@ -18,7 +18,7 @@ const client = new ApolloClient({
 const App = () => {
   const location = useLocation();
   return (
-    <div>
+  
 
 
           <ApolloProvider client={client}>
@@ -46,7 +46,7 @@ const App = () => {
       </AnimatePresence>
           </ApolloProvider>
 
-    </div>
+  
   );
 }
 
