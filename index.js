@@ -26,7 +26,7 @@ mongoose.connection.once('open', () => {
 
 app.use('/graphql-f1', graphqlHTTP({
     schema,
-    graphiql: true
+    
 }))
 
 app.use(express.static('public'));
@@ -38,6 +38,4 @@ app.get('*', (req, res) =>{
 const PORT = process.env.PORT || 4001;
 app.listen(PORT, () => {
     console.log(`Listening for request on port ${PORT}`);
-}).then(({ url }) => {
-    console.log(`🚀 Server ready at ${url}`);
-});
+})
