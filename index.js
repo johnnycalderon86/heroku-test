@@ -17,7 +17,8 @@ app.use(cors())
 
 //connecting to mongoDB server
 mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@cluster0.or615.mongodb.net/${dbName}?retryWrites=true&w=majority`,
- { useNewUrlParser: true, useUnifiedTopology: true })
+ { useNewUrlParser: true, useUnifiedTopology: true }).then(() => console.log('MongoDB connected...'))
+ .catch(err => console.log(err));
 
 mongoose.connection.once('open', () => {
     console.log('connected to database');
