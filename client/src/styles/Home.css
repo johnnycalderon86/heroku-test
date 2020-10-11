@@ -13,6 +13,7 @@
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
+  display:flex;
   /* font-family: "Keania One", cursive; */
   text-transform: uppercase;
   font-family: "Mina", sans-serif;
@@ -21,6 +22,9 @@
   font-family: "Saira Stencil One", cursive;
   /* font-family: "Sonsie One", cursive; */
   padding: 1em;
+  list-style-type: none;
+  justify-content: center;
+  padding-top: 2em;
 }
 
 .Home-Link {
@@ -44,7 +48,7 @@
   .Home-nav {
       height: 100vh;
      
-    font-size: 1.7rem;
+    font-size: 2.4rem;
     display: flex;
     flex-direction: column;
       /* align-items: center;  */
@@ -54,7 +58,5 @@
      /* justify-items: center; */
     /* align-content: center;   */
   }
-  .Home-Link{
-      margin-bottom:0.6em;
-  }
+
 }

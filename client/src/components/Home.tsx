@@ -21,6 +21,15 @@ const containerVariants = {
         }
     }
 }
+const linkVariants = {
+    hover: {
+        scale: 1.3,
+        textShadow: "0px 0px 8px rgb(255,255,255)",
+       
+       
+    }
+}
+
 
 export const Home = () => {
 
@@ -31,11 +40,29 @@ export const Home = () => {
             animate="visible"
             exit="exit"
         >
-            <nav className="Home-nav">
-                <Link className="Home-Link" to='/about'>About</Link>
-                <Link className="Home-Link" to='/circuits'>Circuits</Link>
-                <Link className="Home-Link" to='/teams'>Teams</Link>
-                <Link className="Home-Link" to='/drivers'>Drivers</Link>
+            <nav >
+                <ul className="Home-nav">
+                    <motion.li
+                    variants={linkVariants}
+                    whileHover="hover"
+                    > <Link className="Home-Link" to='/about'>About</Link> </motion.li>
+                    <motion.li
+                    variants={linkVariants}
+                    whileHover="hover"
+                    ><Link className="Home-Link" to='/circuits'>Circuits</Link> </motion.li>
+                    <motion.li
+                    variants={linkVariants}
+                    whileHover="hover"
+                    >  <Link className="Home-Link" to='/teams'>Teams</Link> </motion.li>
+                    <motion.li
+                    variants={linkVariants}
+                    whileHover="hover"
+                    > <Link className="Home-Link" to='/drivers'>Drivers</Link></motion.li>
+                </ul>
+               
+                
+              
+                
             </nav>
         </motion.div>
     )

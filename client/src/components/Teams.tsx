@@ -31,7 +31,7 @@ export const Teams = () => {
         >
             <div className="card">
                 <h1>Teams</h1>
-                <p>Under construction.  Will be a dynamic card layout, like the Circuits page</p>
+                <p>Under construction. The Idea is to have cards display the Teams and relevant data for the current season.</p>
             </div>
         </motion.div>
     )

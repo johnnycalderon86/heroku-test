@@ -3,15 +3,15 @@
     background: url("../images/ferrari-f1-background-hd-1920x1080-381062.jpg");
     /* background-position: center top; */
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
 }
 .About-div{
     color: white;
     border-radius: 10px;
-    font-size:0.8rem;
+    font-size:1.4rem;
     border-bottom:5px solid rgb(240, 235, 240);
-    width: 400px;
-    height: 200px;
+    width: 40%;
+    height: 40%;
     padding:1em;
     font-family: "Keania One", cursive;
     /* text-transform: uppercase; */
@@ -20,17 +20,18 @@
     /* font-family: "Plaster", cursive; */
     /* font-family: "Saira Stencil One", cursive; */
     /* font-family: "Sonsie One", cursive; */
-    background: rgba(10, 9, 9, 0.5);
-    
+    background: rgba(5, 5, 5, 0.7);
+    height: 100vh;
     /* background-position: center top; */
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
     margin:1em;
+    padding-top:20%;
 }
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .About-div{
         text-align: center;
         padding-top:50%;

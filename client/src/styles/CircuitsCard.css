@@ -73,14 +73,14 @@ box-shadow: 10px 10px 5px 0px rgba(3, 8, 0, 0.75);
     .CircuitsCard-div {
         font-size:0.4rem;
         width:70%;
-        
+        border: 8px solid rgb(243, 202, 18);
     }
   
 }
                 @media (max-width:400px){
                     .CircuitsCard-div {
-                       font-size:0.4rem;
-                      
+                       font-size:1rem;
+                       border: 8px solid rgb(143, 137, 62);
                     }
                   
                 }
