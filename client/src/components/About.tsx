@@ -30,7 +30,7 @@ export const About = () => {
             exit="exit"
         >
             <div className="card">
-                <p>I built this site to teach myself GraphQL using NodeJS, Apollo, React and MongoDB.</p>
+                <p>I built this site to learn GraphQL using tools like NodeJS, Apollo, React and MongoDB.</p>
                 <p>I created a GraphQL server that has a 'Circuits' object type. For the moment this is the only RootQuery.</p>
                 <p>The plan is to add 2 more object types: 'Teams' and 'Drivers'.</p>
                 <p>I am an avid fan of Formula 1 and wanted to create an informative site where all information concerning drivers teams and circuits is continuously updated.  </p>
