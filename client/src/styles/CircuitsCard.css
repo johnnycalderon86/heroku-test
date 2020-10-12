@@ -16,14 +16,13 @@ box-shadow: 10px 10px 5px 0px rgba(3, 8, 0, 0.75);
 .CircuitsCard-h1{
     text-align: center;
     font-size:0.8rem;
-  
+    padding:1em;
     font-family: "Keania One", cursive;
     color:rgb(10, 10, 10);
     margin:0;
     background:rgba(241, 241, 243, 0.5);
     font-family: 'Monoton', cursive;
-/* font-family: 'Orbitron', sans-serif; */
-/* font-family: 'Permanent Marker', cursive; */
+
 }
 .CircuitsCard-city-country{
     margin:10px;
@@ -38,13 +37,14 @@ box-shadow: 10px 10px 5px 0px rgba(3, 8, 0, 0.75);
 }
 .fastestLap-span{
     color:purple;
+    padding:1em;
 }
 .CircuitsCard-fastestLapDriver{
     font-size:.7rem
 }
 .card-img{
 
-    width:80%;
+    width:90%;
     /* transition: width 2s; */
   
   
@@ -77,10 +77,10 @@ box-shadow: 10px 10px 5px 0px rgba(3, 8, 0, 0.75);
     }
   
 }
-                @media (max-width:400px){
-                    .CircuitsCard-div {
-                       font-size:1rem;
-                       border: 8px solid rgb(143, 137, 62);
-                    }
-                  
-                }
+    @media (max-width:400px){
+      .CircuitsCard-div {
+      font-size:1rem;
+       border: 8px solid rgb(143, 137, 62);
+      padding:0;
+  }
+ }

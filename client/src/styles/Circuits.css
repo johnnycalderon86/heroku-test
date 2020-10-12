@@ -1,57 +1,75 @@
-
 .Circuits-div {
-    margin: 0 auto;
-    font-size: 1.5rem;
-    width:100vw;
-    
-    /* padding: 0 5em; */
-   text-align: center;
-   padding-bottom:5em;
-   font-family: "Saira Stencil One", cursive;
-   background: rgba(212, 11, 11, 0.7);
-  
-   background: rgba(238, 146, 26, 0.5);
-   background-repeat: no-repeat;
-   background-size: cover;
-   height:100%;
+  /* margin: 2em 3em 1em 4em;; */
+  font-size: 1.5rem;
+  width: 100vw;
+
+  /* padding: 0 5em; */
+  text-align: center;
+  padding-bottom: 2em;
+  font-family: "Saira Stencil One", cursive;
+
+  background: rgba(92, 91, 92, 0.5);
+
+  background-size: cover;
+  min-height: 100vh;
 }
 
+.Circuits-h1 {
+  width: 100vw;
+  text-align: center;
+  color: rgb(10, 10, 10);
+  font-weight: bold;
+  /* font-family: "Keania One", cursive; */
+  text-transform: uppercase;
 
-  .Circuits-h1 {
-    width: 100vw;
-    text-align: center;
-    color:rgb(241, 237, 237);
-    font-weight: bold;
-    /* font-family: "Keania One", cursive; */
-    text-transform: uppercase;
-   
-   /* margin: 0 auto; */
-    font-family: "Saira Stencil One", cursive;
-     
-  }
+  /* margin: 0 auto; */
+  font-family: "Saira Stencil One", cursive;
+}
 
-  .Circuits-cards-div{
-      
-    justify-items:center ;
-      /* padding-left:5em; */
-      /* margin: 0 auto; */
-     
-     
+.Circuits-cards-div {
+  justify-items: center;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(270px, 340px));
+  grid-template-rows: auto auto auto;
+}
+
+@media (max-width: 600px) {
+  .Circuits-cards-div {
+    align-items: center;
+
     display: grid;
-  
-    grid-template-columns: repeat( auto-fit, minmax(270px, 340px) );
+
+    grid-template-columns: repeat(auto-fit, minmax(270px, 340px));
+    grid-template-rows: auto auto auto;
   }
 
+  .Circuits-div {
+    width: 100%;
+    background-image: url("../images/ferrari-f1-background-hd-1920x1080-381062.jpg");
+    background: rgba(92, 91, 92, 0.5);
+    background-repeat: repeat-y;
+    min-height: 100%;
+  }
+  .Circuits-h1 {
+    font-size: 1.8rem;
+  }
+}
 
-
-  @media (max-width: 400px) {
-    .Circuits-div{
-      background: rgb(29, 28, 28);
-    }
-    .Circuits-h1{
-        font-size:1.8rem;
-        
-    }
-
-
-    }
+@media (max-width: 400px) {
+  .Circuits-div {
+    width: 100%;
+    background-image: url("../images/ferrari-f1-background-hd-1920x1080-381062.jpg");
+    background: rgba(248, 246, 243, 0.9);
+    /* background-repeat: repeat-y; */
+    min-height: 100%;
+    margin: 0;
+    /* align-items: center;
+      justify-items: center; */
+    /* padding-right:1.3em; */
+  }
+  .Circuits-h1 {
+    font-size: 1.8rem;
+  }
+}

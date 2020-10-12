@@ -1,45 +1,46 @@
 
-.About-background{
-    background: url("../images/ferrari-f1-background-hd-1920x1080-381062.jpg");
-    /* background-position: center top; */
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 .About-div{
     color: white;
     border-radius: 10px;
     font-size:1.4rem;
     border-bottom:5px solid rgb(240, 235, 240);
-    width: 40%;
-    height: 40%;
-    padding:1em;
-    font-family: "Keania One", cursive;
-    /* text-transform: uppercase; */
     font-family: "Mina", sans-serif;
-    /* font-family: "Molle", cursive; */
-    /* font-family: "Plaster", cursive; */
-    /* font-family: "Saira Stencil One", cursive; */
-    /* font-family: "Sonsie One", cursive; */
     background: rgba(5, 5, 5, 0.7);
     height: 100vh;
-    /* background-position: center top; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin:1em;
-    padding-top:20%;
+    min-height: 100%;
+    width:100vw;
+  background: url("../images/ferrari-f1-background-hd-1920x1080-381062.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
+.card{
+    margin:0 auto;
+    text-align: center;
+    padding:4em 10em;;
+    background:rgba(8, 8, 8, 0.8);
+    width: 80vw;
+}
 
 @media (max-width: 750px) {
     .About-div{
+      
+ 
         text-align: center;
-        padding-top:50%;
         font-size:1.2rem;
-        width:90vw;
+        width:100vw;
         height: 100vh;
-     align-items: center;
-     background: rgba(82, 80, 80, 0.7);
-     
+        
+        
+        min-height:100%;
+    }
+    
+    .card{
+       
+        padding:1em 1em;;
+        width:100%;
+        background:rgba(8, 8, 8, 0.5);
     }
   }

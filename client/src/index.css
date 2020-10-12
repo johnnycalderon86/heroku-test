@@ -1,22 +1,15 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background: rgb(250, 247, 247);
-  background: url("./images/ferrari-f1-background-hd-1920x1080-381062.jpg");
-  /* background-position: center top; */
+ 
+  background-image: url("./images/F1-Logo2.png");
+ 
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-
-}
-
-@media (max-width: 600px) {
-  body {
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-  }
+  /* margin: 0 auto; */
 }
