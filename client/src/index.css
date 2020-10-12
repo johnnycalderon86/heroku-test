@@ -1,11 +1,11 @@
 * {
   margin: 0;
-  padding: 0;
+  
   box-sizing: border-box;
 }
 
 body {
- font-size: 1rem;
+ 
   background-image: url("./images/F1-Logo2.png");
  
   background-position: center top;
@@ -13,3 +13,4 @@ body {
   background-size: cover;
   /* margin: 0 auto; */
 }
+
